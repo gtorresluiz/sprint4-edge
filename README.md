@@ -1,30 +1,30 @@
 **CleanWave**
 
-Este é um projeto que utiliza um dispositivo ESP (ESP8266 ou ESP32) para detectar a presença em vasos sanitários e enviar essas informações para a plataforma TagoIO usando MQTT. A plataforma TagoIO será usada para armazenar os dados e permitir a visualização em tempo real por meio de um display.
+O projeto CleanWave é uma solução inovadora que utiliza dispositivos ESP (ESP8266 ou ESP32) para detectar a presença em vasos sanitários, permitindo um monitoramento eficiente e em tempo real por meio da plataforma TagoIO. Este README fornecerá uma visão abrangente do projeto e orientações para configurar e implementar a solução.
 
 ### Requisitos de Hardware:
 
-- ESP32 
+- ESP32
 - Sensor de Presença (por exemplo, PIR - Passive Infrared Sensor)
 - Conexão à Internet (Wi-Fi)
 
 ### Configuração do Ambiente de Desenvolvimento:
 
-1. **Arduino IDE:**
-   - Certifique-se de ter a Arduino IDE instalada em seu computador.
-   - Instale as bibliotecas necessárias, como "ArduinoJson" e "EspMQTTClient", usando o Gerenciador de Bibliotecas da Arduino IDE.
+**Arduino IDE:**
+1. Certifique-se de ter a Arduino IDE instalada em seu computador.
+2. Instale as bibliotecas necessárias, como "ArduinoJson" e "EspMQTTClient", utilizando o Gerenciador de Bibliotecas da Arduino IDE.
 
 ### Configuração do Projeto:
 
-1. **TagoIO:**
-   - Crie uma conta na plataforma TagoIO (https://tago.io/).
-   - Crie um novo "Device" e obtenha o "Token do Device".
+**TagoIO:**
+1. Crie uma conta na plataforma TagoIO (https://tago.io/).
+2. Crie um novo "Device" e obtenha o "Token do Device".
 
-2. **Arduino Code:**
-   - Abra o código fornecido no Arduino IDE.
-   - Modifique as informações de conexão Wi-Fi (`SSID` e `senha`).
-   - Substitua os campos em `EspMQTTClient` com as informações fornecidas pelo TagoIO (servidor, usuário e token do dispositivo).
-   - Adapte o código para o tipo de sensor de presença que você está usando.
+**Arduino Code:**
+1. Abra o código fornecido na Arduino IDE.
+2. Modifique as informações de conexão Wi-Fi (SSID e senha).
+3. Substitua os campos em EspMQTTClient com as informações fornecidas pelo TagoIO (servidor, usuário e token do dispositivo).
+4. Adapte o código para o tipo de sensor de presença que você está usando.
 
 ### Como Funciona:
 
@@ -34,4 +34,4 @@ Este é um projeto que utiliza um dispositivo ESP (ESP8266 ou ESP32) para detect
 4. Os dados são armazenados no TagoIO, permitindo monitoramento em tempo real.
 5. O display mostra a variável e o valor, por exemplo, "presenca: true".
 
-Este README fornece uma visão geral do projeto CleanWave, permitindo que a empresa implante um sistema de detecção de presença eficiente em seus vasos sanitários. 
+O projeto CleanWave oferece uma solução eficaz e escalável para a detecção de presença em vasos sanitários, proporcionando benefícios como eficiência operacional e monitoramento em tempo real. Sinta-se à vontade para adaptar e expandir o código de acordo com as necessidades específicas da empresa.
